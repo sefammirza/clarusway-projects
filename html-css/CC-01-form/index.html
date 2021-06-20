@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-info">
+            <h1>Lorem ipsum dolor.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi?</p>
+            <form action="result.html" method='GET'>
+                <div class="inputbox">
+                    <label for="name" >Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+                </div>
+                <div class="inputbox">
+                    <label for="surname">Surname</label><br>
+                    <input type="text" id="surname" name="soyisim" placeholder="enter your surname">
+                </div>
+                <div class="inputbox">
+                    <label for="email">email</label><br>
+                    <input type="email" id="email" name="emailadresi" placeholder="email">
+                </div>
+                <div class="inputbox">
+                    <label for="role">Which Role</label><br>
+                    <select name="role" id="role">
+                        <option value="0" selected>Selext option</option>
+                        <option value="jon">jonsnow</option>
+                        <option value="khalisi">Khalisia</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <label>Would like</label><br>
+                    <input type="checkbox" id="first-check" name="movie1" value="comedy">
+                    <label for="first-check">Comedy</label><br>
+                    <input type="checkbox" id="second-check" name="movie2" value="action">
+                    <label for="second-check">Action</label><br>
+                    <input type="checkbox" id="third-check" name="movie3" value="romance">
+                    <label for="third-check">Romance</label>
+                </div>
+             <div class="inputbox">
+                    <label for="role">Which favorite</label><br>
+                    <select name="role" id="role">
+                        <option value="0" selected>Selext option</option>
+                        <option value="jon">jonsnow</option>
+                        <option value="khalisi" >Khalisia</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <label> What would you like to see improved?(Check all that apply)</label><br>
+                    <input type="radio" name="x" id="frontend" value="frontendfgh">
+                    <label for="frontend"> Front-end Projects</label><br>
+                    <input type="radio" name="x" id="backend" value="backendfgh">
+                    <label for="backend">Back-end-Projects</label><br>
+                    <input type="radio" name="x" id="data" value="datafgh">
+                    <label for="data">Data Science</label><br>
+                    <input type="radio" name="x" id="additional" value="additionalfgh">
+                    <label for="additional">Additional Course</label><br>
+                </div>
+                <div class="inputbox">
+                    <label>Gender</label><br>
+                    <input type="radio" name="gender" id="first-radio" value="male">
+                    <label for="first-radio">Male</label><br>
+                    <input type="radio" name="gender" id="second-radio" value="female">
+                    <label for="second-radio">Female</label><br>
+                    <input type="radio" name="gender" id="third-radio" value="other">
+                    <label for="third-radio">Other</label>
+                </div>   
+                <div class="inputbox">
+                    <label for="feedback">Feedback</label><br>
+                    <textarea name="message" id="feedback" cols="30" rows="10" placeholder="any comment" style="resize: none;"></textarea>
+                </div>
+                <div id="form-submit">
+                    <button type="submit" id="form-button">Send</button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
