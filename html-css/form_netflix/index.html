@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETFLİX</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>NET<span>FLIX</span></h1>
+      <p>
+        Thank you for singing up at Netflix. Tell us more about your self.
+      </p>
+    </div>
+    <div class="container">
+
+      <div class="border">
+  
+      </div>
+
+      <div>
+        <form action="./result.html">
+          <div class="inputboxes">
+            <label for="name">Name</label><br />
+            <input type="text" name="ism" id="name" placeholder="Enter Your Name"/>
+          </div>
+          <div class="inputboxes">
+            <label for="yas">Age</label><br />
+            <input type="number" name="yas" id="yas" placeholder="Age" />
+          </div>
+          <div class="inputboxes">
+            <label for="mail">Email</label><br />
+            <input type="email" name="kullanici maili" id="mail" placeholder="Enter Your email" />
+          </div>
+          <div class="inputboxes">
+            <label for="serie">Content Type</label><br />
+            <input list="filmler" name="serie" placeholder="Serias" />
+            <datalist id="filmler">
+              <!--Daha önce bahsedildiği şekilde bu id ler programlamada kullanılabilsin diye vardır-->
+
+              <option value="Game of Thrones"></option>
+              <option value="Fargo"></option>
+              <option value="Braking Bad"></option>
+              <option value="True Dedective"></option>
+            </datalist>
+          </div>
+          <div class="checkbox">
+            <label>Movie Type</label><br />
+            <input
+              type="checkbox"
+              name="movietype"
+              id="comedy"
+              value="comedy"
+            />
+            <label for="comedy">Comedy</label><br />
+            <input
+              type="checkbox"
+              name="movietype"
+              id="comedy"
+              value="action"
+            />
+            <label for="action">Action</label><br />
+            <input
+              type="checkbox"
+              name="movietype"
+              id="comedy"
+              value="romance"
+            />
+            <label for="romance">Romance</label>
+          </div>
+          <div class="cinsiyet">
+            <label> Gender</label><br />
+
+            <input type="radio" name="male" id="sex1" />
+            <label for="sex1">Male</label><br />
+            <input type="radio" name="female" id="sex" />
+            <label for="sex2">Female</label><br />
+            <input type="radio" name="other" id="sex3" />
+            <label for="sex3">Other</label>
+          </div>
+          <div class="text">
+            <label for="area">Feed Back</label><br />
+            <textarea
+              name="feedback"
+              id="area"
+              placeholder="Any comment"
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

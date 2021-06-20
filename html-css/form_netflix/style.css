@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+body{
+    background: url('./dUyCkp.jpg') no-repeat center center fixed;
+    text-align: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+    
+}
+
+.title{
+    margin: auto;
+    width: 50%;
+    padding: 15px 0;
+
+}
+.title h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+.title span{
+    color:red;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+.container{
+    background-color: rgba(0, 0, 0, 0.61);
+    margin: auto;
+    width: 20%;
+    padding: 15px 0;
+
+}
+.container .border span{
+    color:red;
+}
+.checkbox{
+    width: 100%;
+
+}
+.checkbox {
+    margin-left: 20px;
+    width: 100%;
+    text-align: left;
+} 
+.cinsiyet{
+    margin-left: 20px;
+    width: 100%;
+    text-align: left;
+}
+.inputboxes{
+    margin: 0 0 10px 20px ;
+    text-align: left;
+}
+.inputboxes input{
+    width: 95%;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: black;
+}
+.text{
+ text-align: left;
+ margin: 0 0 10px 20px;
+}
+
+.text label{
+    margin:30px 0;
+}
+
+.text textarea {
+    width: 95%;
+    padding: 5px 10px;
+    margin-top: 10px;
+    resize: none;
+    color: black;
+}
+
+button{
+    background-color: red;
+    border-radius: 12%;
+    padding: 5px 30px;
+    cursor: pointer;
+    border: none;
+}
+.checkbox{
+    margin-top: 7px;
+}
+.cinsiyet{
+    margin-top: 7px;
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+
+    .container{
+        background-color: rgba(0, 0, 0, 0.61);
+        margin: auto;
+        width: 25%;
+        padding: 15px 0;
+    
+    }
+
+}
+@media only screen and (max-width: 1300px) {
+
+    .container{
+        background-color: rgba(0, 0, 0, 0.61);
+        margin: auto;
+        width: 30%;
+        padding: 15px 0;
+    
+    }
+
+}
+@media only screen and (max-width: 1100px) {
+
+    .container{
+        background-color: rgba(0, 0, 0, 0.61);
+        margin: auto;
+        width: 30%;
+        padding: 15px 0;
+    
+    }
+
+}
+@media only screen and (max-width: 900px) {
+
+    .container{
+        background-color: rgba(0, 0, 0, 0.61);
+        margin: auto;
+        width: 40%;
+        padding: 15px 0;
+    
+    }
+
+}
