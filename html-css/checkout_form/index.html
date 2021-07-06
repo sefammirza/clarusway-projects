@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chechout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info info-1">
+            <div class="box box1">
+                <h1>Contact information</h1>
+                <label for="email">Email</label>
+                <div class="inpt emai">
+                    <i class="fa fa-envelope-square"></i>
+                    <input type="email" name="ema" id="email" placeholder="Enter your email...">
+                </div>
+                <label for="phone">Phone</label>
+                
+                <div class="inpt phone">
+                    <i class="fa fa-phone"></i>
+                    <input type="number" name="phone" id="phone" placeholder="Enter your phone...">
+                </div>
+            </div>
+            <div class="box box2">
+                <h1>Shipping adress</h1>
+                <label for="full_name">Full Name</label>
+                <div class="inpt name">
+                    <i class="fa fa-phone"></i>
+                    <input type="text" name="name" id="name" placeholder="Enter your Full  name...">
+                </div>
+                <label for="adress">Adress</label>
+                <div class="inpt adress">
+                    <i class="fa fa-phone"></i>
+                    <input type="text" name="adress" id="adress" placeholder="Enter your adress...">
+                </div>
+                <label for="city">City</label>
+                <div class="inpt city">
+                    <i class="fa fa-phone"></i>
+                    <input type="text" name="city" id="city" placeholder="Enter your city...">
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="countr_postcode">
+                    <div class="country">
+                        <label for="role">Country</label><br>
+                    <select name="role" id="role">
+                        
+                        <option value="0" selected>Turkey</option>
+                        <option value="jon">Poland</option>
+                        <option value="khalisi" >Usa</option>
+                    </select>
+                    </div>
+                    <div class="postcode">
+                    <label for="postcode">Phone</label>
+                    <div class="inpt phone">
+                        <i class="fa fa-phone"></i>
+                        <input type="number" name="postcode" id="postcode" placeholder="Enter your postal code...">
+                    </div>
+                </div>
+                </div>
+                <div class="select">
+                    <input type="checkbox" id="first-check" name="movie1" value="comedy">
+                    <label for="first-check">See this information next time</label>
+                </div>
+            </div>
+        </div>
+        <div class="info info2">
+            <div class="product">
+                <img src="./img/photo1.png" alt="">
+                <div class="product_info">
+                    <h1>Vintage Backbag</h1>
+                    <div class="price">
+                        <p>$54.99<span>$94.99</span></p>
+                    </div>
+                    <div class="number">
+                        <button>-</button><p>1</p><button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./img/photo2.png" alt="">
+                <div class="product_info">
+                    <h1>Levi Shose</h1>
+                    <div class="price">
+                        <p>$54.99<span>$94.99</span></p>
+                    </div>
+                    <div class="number">
+                        <button>-</button><p>1</p><button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <div class="shipping">
+                    <h2>Shippibg</h2>
+                    <p>$19</p>
+                </div>
+                <div class="shipping">
+                    <h2>Total</h2>
+                    <p>$148.98</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
