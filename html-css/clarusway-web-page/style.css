@@ -144,7 +144,7 @@ footer .container img{
     width: 100%;
 }
 .section4 .container{
-    padding: 30px 200px;
+    padding: 30px 200px 250px;
     display: flex;
     justify-content: space-between;
 }
@@ -179,7 +179,7 @@ color: #fff;
 .section5 .container{
     display: flex;
     justify-content: space-between;
-    padding: 35px 200px;
+    padding: 35px 200px 80px;
 }
 .section5 .container .box1{
     display: flex;
