@@ -2,9 +2,9 @@ const input = document.querySelector('input');
 const btn = document.querySelector('.addtask > button');
 
 btn.addEventListener('click', addList);
-input.addEventListener('keyup', (e) =>{
+/* input.addEventListener('keyup', (e) =>{
     (e.keyCode === 13 ? addList(e): null);
-})
+}) */
 
 function addList(e){
     const notCompleted = document.querySelector('.notCompleted');
