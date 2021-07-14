@@ -10,6 +10,13 @@ body{
     justify-content: center;
     height: 100vh;
     padding: 200px 0;
+    background-color: antiquewhite;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 27px;
+    color: steelblue;
 }
 .container .addtask{
     margin-bottom: 40px;
@@ -23,6 +30,10 @@ body{
 }
 .container .addtask button{
     padding: 5px 10px;
+    background-color: steelblue;
+    color: antiquewhite;
+    border: none;
+    cursor: pointer;
 }
 .container .notCompleted{
     min-width: 400px; 
@@ -33,6 +44,7 @@ body{
     background-color: #66CDAA;
     margin-bottom: 10px;
     color: aliceblue;
+    border-radius: 5px;
 }
 .container li button{
     float: right;
@@ -42,10 +54,11 @@ body{
     color: antiquewhite;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 .container  h3{
     font-weight: 600;
     margin-bottom: 10px;
+    color: steelblue;
 }
 
- .container .Completed 
