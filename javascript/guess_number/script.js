@@ -1,6 +1,8 @@
  const btn = document.getElementById('btn');
  const output = document.getElementById('outputtext');
  const outputCount = document.getElementById('outputcount')
+ const container = document.getElementById('container')
+ const guess = document.getElementById('guess')
 
 let county = 1
 
@@ -12,6 +14,11 @@ const number = Math.floor(Math.random() * 100);
      if(input == number){
          output.innerHTML = `You guess right, your number was ${number}`
          outputCount.innerHTML = ` Number of Attempts : ${county}`;
+         output.style.background = 'rgb(0,0,0, 0.6)'
+         output.style.color = '#fff'
+         container.style.background = 'rgb(0, 0, 0, 0.1)'
+         guess.style.background='rgb(0,0,0, 0.6)'
+         guess.style.color = '#fff'
      }
      else if (input < number){
          output.innerHTML = "You guess too low!"
