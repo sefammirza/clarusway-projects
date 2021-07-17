@@ -3,6 +3,7 @@
  const outputCount = document.getElementById('outputcount')
  const container = document.getElementById('container')
  const guess = document.getElementById('guess')
+ const img = document.getElementById('image')
 
 let county = 1
 
@@ -19,6 +20,9 @@ const number = Math.floor(Math.random() * 100);
          container.style.background = 'rgb(0, 0, 0, 0.1)'
          guess.style.background='rgb(0,0,0, 0.6)'
          guess.style.color = '#fff'
+         outputCount.style.padding = '5px'
+         outputCount.style.background = 'rgb(0,0,0, 0.6)'
+         img.style.display = 'block'
      }
      else if (input < number){
          output.innerHTML = "You guess too low!"
@@ -32,8 +36,12 @@ const number = Math.floor(Math.random() * 100);
      }
      if(input > 100 ){
         output.innerHTML = "Enter a number of 100 or less."
+        alert('Enter a number of 100 or less.')
      }
  }
  else{
     alert("Please Enter Only Number")}
 })
+
+
+
