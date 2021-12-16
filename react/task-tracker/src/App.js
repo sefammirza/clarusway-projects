@@ -27,6 +27,18 @@ function App() {
     },
   ]);
 
+
+  const [showAddTask, setShowAddTask] = useState(false)
+
+  // Add Task
+
+  const addTask = (newTask) => {
+    /* console.log("Add Task from App.js") */
+    const id = Math.floor(Math.random() * 100) + 1;
+    const addNewTask = {id, ...newTask}
+    setTasks([...tasks, addNewTask])
+  }
+
   // Delete Task
 
   const deleteTask = (deletedTaskId) => {
@@ -34,12 +46,27 @@ function App() {
     setTasks(tasks.filter((task) => task.id !== deletedTaskId))
   }
 
+  // Toogle Done
+
+  const toggleDone = (toggleDoneId) => {
+    setTasks (
+      tasks.map((task) => task.id === toggleDoneId ? {...task, isDone: !task.isDone } : task)
+    )
+  }
+
+  // Show  Add task
+
+  const toggleShow = () => setShowAddTask(!showAddTask);
 
   return (
     <div className="container">
-      <Header title="TASK TRACKER"/>
-      <AddTask/>
-      <Tasks tasks={tasks} deleteTask={deleteTask}/>
+      <Header title="TASK TRACKER" showAddTask={showAddTask} toggleShow={toggleShow}/>
+      {showAddTask && <AddTask addTask={addTask}/>}
+      {
+        tasks.length > 0 ? <Tasks tasks={tasks} deleteTask={deleteTask}  toggleDone={toggleDone}/> : 
+        <p style={{textAlign: "center"}}>No Task To Show</p>
+      }
+      
     </div>
   );
 }
