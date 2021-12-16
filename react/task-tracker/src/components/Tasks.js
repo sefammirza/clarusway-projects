@@ -1,12 +1,14 @@
 /* import React from 'react' */
 
-const Tasks = ({tasks}) => {
+import Task from "./Task";
+
+const Tasks = ({tasks, deleteTask}) => {
     console.log("tasks", tasks)
     return (
         <div>
-            {tasks.map((task) => {
-                <p key={task.id}>{task.text}</p>
-            })}
+            {tasks.map((task) => 
+               <Task key={task.id} task={task} deleteTask={deleteTask}/>
+            )}
         </div>
     );
 };

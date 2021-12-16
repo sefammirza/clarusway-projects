@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Tasks from './components/Tasks';
 import {useState} from 'react';
+import AddTask from './components/AddTask';
 
 function App() {
 
@@ -26,10 +27,19 @@ function App() {
     },
   ]);
 
+  // Delete Task
+
+  const deleteTask = (deletedTaskId) => {
+    /* console.log("delete", deletedTaskId) */
+    setTasks(tasks.filter((task) => task.id !== deletedTaskId))
+  }
+
+
   return (
     <div className="container">
       <Header title="TASK TRACKER"/>
-      <Tasks tasks={tasks}/>
+      <AddTask/>
+      <Tasks tasks={tasks} deleteTask={deleteTask}/>
     </div>
   );
 }
