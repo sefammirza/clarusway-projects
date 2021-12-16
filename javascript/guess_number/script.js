@@ -4,6 +4,7 @@
  const container = document.getElementById('container')
  const guess = document.getElementById('guess')
  const img = document.getElementById('image')
+ const u = document.getElementById('sefa')
 
 let county = 1
 
@@ -42,6 +43,5 @@ const number = Math.floor(Math.random() * 100);
  else{
     alert("Please Enter Only Number")}
 })
-
 
 
